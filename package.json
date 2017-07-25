@@ -1,0 +1,44 @@
+{
+  "name": "countries-geo-data",
+  "version": "1.0.0",
+  "description": "Data processor merging 2 data sources into one: countries grouped by continents",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts mocha.opts"
+  },
+  "keywords": [
+    "geojson",
+    "data",
+    "country",
+    "country name",
+    "capital",
+    "city",
+    "lat/lng",
+    "latitude",
+    "longitude",
+    "continent",
+    "population",
+    "area",
+    "census",
+    "flag",
+    "translation",
+    "map",
+    "node",
+    "javascript",
+    "es2015",
+    "es6"
+  ],
+  "author": "raffalli.marc.ed@hotmail.fr",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "debug": "^2.6.8",
+    "filecopy": "^3.0.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "mocha": "^3.4.2"
+  }
+}
