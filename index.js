@@ -2,14 +2,16 @@ const debug = require('debug')('index');
 
 debug('Started with params', process.argv);
 
-if (process.argv.length <= 3) {
-// TODO
+if (process.argv.length <= 11) {
   console.log(`
---------------------------------
-instructions here
------------
-Use: 
-$ node ./scripts/reduce.js destinationFolder file-1.geo.json file-2.geo.json ...
+Required parameters:
+--geoJson     path/to/all.geojson
+--countries   path/to/countries.json
+--flags       path/to/svg/flags/
+--output      dist
+--outputFlags dist/flags
+
+See README for more details
 `);
 
   process.exit();

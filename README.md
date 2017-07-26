@@ -25,6 +25,15 @@ then run the script using either the CLI or the JS API.
 
 ### Command line
 
+- `geoJson`: Path to the file in the *geojson-regions* repository providing a collection of features
+  50m precision is used in the example above, but any should work
+- `countries`: Path to the file in the *countries* repository providing the list of country data
+- `flags`: Path to the flags directory in the *countries* repository
+- `output`: Path to the directory where to store the output data
+- `outputFlags`: Path to the directory where to store the flags
+
+**Example:**
+
 ```bash
 node .  --geoJson     ../geojson-regions/countries/50m/all.geojson \ 
         --countries   ../countries/countries.json                  \ 
@@ -32,12 +41,6 @@ node .  --geoJson     ../geojson-regions/countries/50m/all.geojson \
         --output      dist                                         \
         --outputFlags dist/flags    
 ```
-- `geoJson`: Path to the file in the *geojson-regions* repository providing a collection of features
-  50m precision is used in the example above, but any should work
-- `countries`: Path to the file in the *countries* repository providing the list of country data
-- `flags`: Path to the flags directory in the *countries* repository
-- `output`: Path to the directory where to store the output data
-- `outputFlags`: Path to the directory where to store the flags
 
 `output`, `outputFlags` directories will be created if required.
 
